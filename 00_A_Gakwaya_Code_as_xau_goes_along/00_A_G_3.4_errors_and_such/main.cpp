@@ -6,4 +6,13 @@ You can get warnings
 We are going to see what each of these is
 */
 
-runtime 
+#include <iostream>
+
+int main(){
+    std::cout << "Hello World" << std::endl; // Compile time error, because we forgot to include iostream
+
+    //runtime error example
+    int value = 7;
+    std::cout << value << std::endl;
+    std::cout << "Hello World" << std::endl;
+}
